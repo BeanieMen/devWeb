@@ -8,7 +8,7 @@ export default function Navbar() {
 
       <div className="flex items-center mx-auto">
         <Link href="/" className="font-bold text-3xl">
-          <span className="text-gray-600 dark:text-white">Beanie&apod;s</span><span className="text-primary max-w-2xl mx-auto">Blog</span>
+          <span className="text-gray-600 dark:text-white">Beanie&apos;s</span><span className="text-primary max-w-2xl mx-auto">Blog</span>
         </Link>
       </div>
       <ModeToggle />
