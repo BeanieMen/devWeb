@@ -28,13 +28,13 @@ export default async function Home() {
     <main>
       <div className="grid grid-cols-1  md:grid-cols-1 mt-5 gap-5">
         {data.map((post, idx) => (
-          <Card key={idx}>
+          <Card className="flex flex-col items-center" key={idx}>
             <Image
               src={urlFor(post.titleImage).url()}
               alt="image"
               width={500}
               height={500}
-              className="rounded-t-lg h-[200px] object-cover"
+              className="rounded-t-lg h-[200px] object-cover flex justify-center"
             />
 
             <CardContent className="mt-5">
@@ -49,6 +49,7 @@ export default async function Home() {
           </Card>
         ))}
       </div>
+      <footer className="p-4 mt-10 align-bottom text-gray-500 dark:text-gray-300">Done reading? Check out the <Link href="/about" className="text-primary">About me</Link></footer>
     </main>
   );
 }
