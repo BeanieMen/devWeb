@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
 import { MenuDropDown } from "./Menu";
 
-export default function Navbar() {
+export default function NavbarHome() {
   return (
     <nav className="w-full relative flex flex-col items-center bg-gray-300 rounded-b-2xl dark:bg-slate-800">
       <div className="w-full flex justify-between items-center px-4 py-5">
@@ -13,6 +13,14 @@ export default function Navbar() {
           </Link>
         </div>
         <ModeToggle />
+      </div>
+      <div className="flex justify-between gap-3">
+      <Link href="/blog" className="underline dark:text-white transform transition duration-500 hover:scale-110 text-gray-600 hover:font-bold   text-md pb-3">
+          <span className="hover:text-primary">Blog</span>
+        </Link>
+        <Link href="/about" className="underline dark:text-white transform transition duration-500 hover:scale-110 text-gray-600 hover:font-bold   text-md pb-3">
+          <span className="hover:text-primary">About me</span>
+        </Link>
       </div>
     </nav>
   );

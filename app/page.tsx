@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import NavbarHome from "./components/NavbarHome";
 // Set revalidate value
 export const revalidate = 30; // revalidate at most 30 seconds
 
@@ -16,8 +17,8 @@ function handleGit() {
 // About component
 export default function About() {
   return (
-    <main className="p-4">
-      {/* Introduction Section */}
+    <main>
+      <NavbarHome />
       <div className="mt-10 flex flex-col md:flex-row justify-center items-center gap-12">
         <Image
           className="rounded-full mb-4 md:mb-0"
@@ -32,10 +33,6 @@ export default function About() {
       </div>
       <div className="mt-10 flex justify-center ">
         <h1>I do random <span className="text-primary"> REEEEE </span>stuff while being an absolute maniac</h1>
-      </div>
-
-      <div className="mt-2 flex justify-center ">
-        <h1>Check out the <Link className="text-primary" href={"/"}>Blog</Link></h1>
       </div>
       <div className="align-bottom mt-10">
         <div className="mt-5 flex justify-center ">

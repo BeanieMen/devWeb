@@ -4,6 +4,7 @@ import { client, urlFor } from "../lib/sanity";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Navbar from "../components/Navbar";
 
 export const revalidate = 30; // revalidate at most 30 seconds
 
@@ -26,6 +27,7 @@ export default async function Home() {
 
   return (
     <main>
+      <Navbar />
       <div className="grid grid-cols-1  md:grid-cols-1 mt-5 gap-5">
         {data.map((post, idx) => (
           <Card className="flex flex-col items-center" key={idx}>
