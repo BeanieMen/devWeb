@@ -28,7 +28,7 @@ export default async function BlogArticle({
   return (
     <main>
       <Navbar />
-    <div className="mt-8">
+    <div className="mt-8 flex-col items-center mx-auto justify-center">
       <h1>
         <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl">
           {data.title}
@@ -41,10 +41,10 @@ export default async function BlogArticle({
         height={800}
         alt="Title Image"
         priority
-        className="rounded-lg mt-8 border"
+        className="rounded-lg mt-8 border mx-auto"
       />
 
-      <div className="mt-16 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
+      <div className="mt-16 mx-auto prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
         <PortableText value={data.content} />
       </div>
     </div>
