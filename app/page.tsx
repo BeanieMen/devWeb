@@ -31,7 +31,7 @@ export default function About() {
           Hi, I am <span className="text-primary">Beanie</span>
         </span>
       </div>
-      <div className="mt-10 flex justify-center ">
+      <div className="mt-10 flex justify-center items-cente ml-3">
         <h1>I do random <span className="text-primary"> REEEEE </span>stuff while being an absolute maniac</h1>
       </div>
       <div className="align-bottom mt-10">
@@ -39,7 +39,6 @@ export default function About() {
           <h1>Here are my <span className="text-primary">Socials</span></h1>
         </div>
         <div className="flex justify-center mt-3 gap-3">
-
           <Button variant="outline" size="icon" onClick={handleGit}>
             <Github className="prose-invert dark:rotate-0 dark:scale-200" />
           </Button>
