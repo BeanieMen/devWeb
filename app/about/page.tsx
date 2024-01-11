@@ -1,36 +1,36 @@
-"use client";
+import React from "react";
 import Navbar from "../components/Navbar";
+
 export const revalidate = 30;
 
 function handleGit() {
   window.location.href = "https://github.com/BeanieMen";
 }
 
-
 export default function About() {
   return (
     <main>
       <Navbar />
-      <div className="ml-8">
+      <div className="ml-8 flex flex-col items-center justify-center"> 
         <div className="mt-10 ml flex flex-col md:flex-row gap-12 justify-center font-light">
           <span className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
             About me
           </span>
         </div>
-        <div className="mt-10 flex-col max-w-2xl mr-5 items-center justify-center mx-auto font-light">
-          <h1 className="text-xl ">
+        <div className="mt-10 max-w-2xl mr-5 font-light text-left">
+          <h1 className="text-xl">
             Hi, My name is Aarjav Jain. I am currently studying in 9th.
-            I am mostly interested in making weird projects from weird apis, libraries and frameworks in the
+            I am mostly interested in making weird projects from weird APIs, libraries, and frameworks in the
             <span className="hover:underline text-primary hover:cursor-pointer"> typescript </span>
             language while also simultaneously trying to learn systems programming which has been a hard rock to break.
           </h1>
-          <h1 className="text-xl  mt-7">
+          <h1 className="text-xl  mt-7 mx-auto">
             My current interests are to program while not being a total shut-in and maintain my social life.
-            For the future i havent reall thought about what i am gonna do. But knowing myself, I know its gonna be something funny
+            For the future, I haven't really thought about what I am gonna do. But knowing myself, I know it's gonna be something funny.
           </h1>
 
           <h1 className="text-xl mt-7">
-            As for now, My current projects which i have done arent noteworthy enough to showcase, I will add them when i make them
+            As for now, My current projects which I have done aren't noteworthy enough to showcase; I will add them when I make them.
           </h1>
         </div>
       </div>
