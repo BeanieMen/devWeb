@@ -26,11 +26,11 @@ export default function About() {
           </h1>
           <h1 className="text-xl  mt-7 mx-auto">
             My current interests are to program while not being a total shut-in and maintain my social life.
-            For the future, I haven't really thought about what I am gonna do. But knowing myself, I know it's gonna be something funny.
+            For the future, I haven&apos;t really thought about what I am gonna do. But knowing myself, I know it&apos;s gonna be something funny.
           </h1>
 
           <h1 className="text-xl mt-7">
-            As for now, My current projects which I have done aren't noteworthy enough to showcase; I will add them when I make them.
+            As for now, My current projects which I have done aren&apos;t noteworthy enough to showcase; I will add them when I make them.
           </h1>
         </div>
       </div>
