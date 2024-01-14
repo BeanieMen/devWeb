@@ -3,6 +3,8 @@ import { client, urlFor } from "@/app/lib/sanity";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import Navbar from "@/app/components/Navbar";
+import PageTransition from "@/app/components/PageTransition";
+
 export const revalidate = 30; // revalidate at most 30 seconds
 
 async function getData(slug: string) {
@@ -26,6 +28,7 @@ export default async function BlogArticle({
   const data: fullBlog = await getData(params.slug);
 
   return (
+    <PageTransition>
     <main>
       <Navbar />
     <div className="mt-8 flex-col items-center mx-auto justify-center">
@@ -49,5 +52,6 @@ export default async function BlogArticle({
       </div>
     </div>
     </main>
+    </PageTransition>
   );
 }

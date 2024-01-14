@@ -3,8 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./components/theme-provider";
 
-const inter = Inter({ subsets: ["latin"] });
 
+const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Beanie Dev",
   description: "A personal website to showcase my 'achievements'",
@@ -24,9 +24,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="">{children}</main>
+          {children}
         </ThemeProvider>
+
       </body>
-    </html>
+    </html >
   );
 }
